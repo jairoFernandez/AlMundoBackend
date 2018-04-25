@@ -10,9 +10,13 @@
   "author": "jairofg12",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "swagger-ui-express": "^3.0.8"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
+  },
+  "engines": {
+    "node": "8.9.2"
   }
 }
