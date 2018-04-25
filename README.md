@@ -2,4 +2,7 @@
 
 1. Express
 2. Nodemon
-3. swagger-ui-express
+
+# Deploy in heroku
+Endpoint: https://api-almundo.herokuapp.com/api
+- Hotels: /hotel
