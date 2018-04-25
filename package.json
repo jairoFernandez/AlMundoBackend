@@ -11,6 +11,7 @@
   "author": "jairofg12",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "swagger-ui-express": "^3.0.8"
   },
