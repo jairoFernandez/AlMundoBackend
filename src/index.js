@@ -15,8 +15,8 @@ var home = require('./routes/home');
 
 server.use('/api/', home);
 
-var port = normalizePort(process.env.PORT || '9000');
+var port = process.env.PORT || '9000';
 
 server.listen(port, (err)=>{
-    console.log("Server up");
+    console.log("Server up " + port);
 });
