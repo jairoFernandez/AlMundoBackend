@@ -1,0 +1,18 @@
+{
+  "name": "almundoprueba",
+  "version": "1.0.0",
+  "description": "Prueba de ingreso a empresa",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jairofg12",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
