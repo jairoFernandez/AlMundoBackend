@@ -18,9 +18,6 @@ server.use(function(req, res, next) {
     next();
  });
  
-/**
- * Router home with service
- */
 var home = require('./routes/home');
 
 server.use('/api/', home);
