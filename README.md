@@ -5,6 +5,14 @@ Para iniciar la aplicación en desarrollo, es necesario setear las variables de 
 ```sh
 cp .env.dist .env # copiar archivo environment propio 
 ```
+## Correr dev con Docker
+```sh
+  docker-compose build #Construimos nuestro entorno
+  docker-compose up -d #Levantamos el contenedor 
+  docker-compose exec backend bash
+  npm install # si es la primera vez
+  npm run server
+```
 
 ## Librerías externas usadas
 

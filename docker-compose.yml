@@ -1,0 +1,11 @@
+version: '2'
+services:
+    backend:
+      build: .
+      volumes:
+        - ${LOCAL_FOLDER}:/src
+      ports:
+        - "9000:9000"
+      entrypoint: /bin/sh
+      stdin_open: true
+      tty: true

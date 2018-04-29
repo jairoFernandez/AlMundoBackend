@@ -6,7 +6,7 @@ var hotelService = function () {
     get = async function (filters) {    
         var hotels = await Hotel.find(filters);
         return hotels;
-    }
+    }      
 
     return {
         get: get
