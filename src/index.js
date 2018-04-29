@@ -3,6 +3,8 @@ var server = express();
 var bodyParser  = require("body-parser");
 var path = require('path');
 var cors = require('cors');
+var env = require('node-env-file'); // .env file
+env(__dirname + '/../.env');
 
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(bodyParser.json());

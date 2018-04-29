@@ -1,13 +1,15 @@
 var data = require('../data/data.json');
+const Hotel = require('../models').Hotel;
 
 var hotelService = function () {
-    
-    getAll = function () {
-        return data;
+
+    get = async function (filters) {    
+        var hotels = await Hotel.find(filters);
+        return hotels;
     }
 
     return {
-        getAll: getAll
+        get: get
     }
 }
 
