@@ -18,10 +18,16 @@ var hotelService = function () {
         return hotel;
     }
 
+    deleteHotel = async function(id){
+       var hotel = await Hotel.deleteOne({_id: id});
+       return hotel;
+    }
+
     return {
         get: get,
         create: create,
-        getById: getById
+        getById: getById,
+        delete: deleteHotel
     }
 }
 

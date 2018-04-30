@@ -33,4 +33,11 @@ router.post('/Hotel', async(req, res)=>{
     res.send(hotel);
 });
 
+router.delete('/Hotel/:id', async(req, res)=>{
+    await hotelservice.delete(req.params['id']);
+    res.send({
+        "OK": "Eliminado correctamente"
+    });
+});
+
 module.exports = router;
