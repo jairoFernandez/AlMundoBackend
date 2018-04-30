@@ -6,8 +6,8 @@ var cors = require('cors');
 var env = require('node-env-file'); // .env file
 env(__dirname + '/../.env');
 
-server.use(bodyParser.urlencoded({ extended: false }));
-server.use(bodyParser.json());
+server.use(bodyParser.json({limit: '50mb'}));
+server.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 server.use(express.static(path.join(__dirname, 'assets'))); // Add folder assets for public use
 server.use(cors());

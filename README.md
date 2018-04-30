@@ -14,6 +14,8 @@ cp .env.dist .env # copiar archivo environment propio
   npm run server
 ```
 
+En el navegador [http://localhost:9000/api](http://localhost:9000/api)
+
 ## Librerías externas usadas
 
 1. Express
